@@ -1,3 +1,7 @@
+plugins {
+  id "org.sonarqube" version "3.4.0.2513"
+}
+
 apply plugin: 'java'
 apply plugin: 'maven-publish'
 
@@ -7,9 +11,6 @@ version = '2.0'
 sourceCompatibility = 1.8 // java 8
 targetCompatibility = 1.8
 
-plugins {
-  id "org.sonarqube" version "3.4.0.2513"
-}
 
 sonarqube {
   properties {
